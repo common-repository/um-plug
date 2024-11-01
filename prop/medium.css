@@ -1,0 +1,50 @@
+/* nav.css */
+
+#site-navigation .menu-toggle { display: block;}
+#site-navigation .nav-menu { display: none; height: 0; }
+#site-navigation.toggled .nav-menu { display: block; height: auto; }
+
+.main-navigation ul,
+.main-navigation li { width: 100%; }
+.main-navigation li ul ul { left: 0; top: 2em; }
+
+/* base.css */
+
+html #wpadminbar { position: fixed; }
+textarea,
+.entry-content pre { min-width: 96%; }
+
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float:none;
+	text-align: right;
+	width: 100%;
+}
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float:none;
+	text-align: left;
+	width: 100%;
+}
+
+/* layout/default.css */
+
+html { overflow-x: hidden; }
+
+.site-side { float: left; width: 30%; overflow:hidden; position: absolute; right: -27%; }
+.site-main { float: left; width: 97%; overflow:hidden; }
+.site-side:hover,
+.site-side.clicked { width: 30%; background: rgba(255,255,255,.9); right:0; padding: 0 0 1em 1em; }
+
+.col2>div.last{margin-right:0;width:50%}
+.col2>div{float:left;margin-right:2%;width:48%}
+.col3>div.last{margin-right:0;width:33%}
+.col3>div{float:left;margin-right:2%;width:31%}
+.col5>div.last,
+.col4>div.last{margin-right:0;width:25%}
+.col5>div,
+.col4>div{float:left;margin-right:2%;width:23%}
+
